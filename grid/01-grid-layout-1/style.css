@@ -8,6 +8,11 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 12.5% 12.5% 62.5% 12.5%;
 }
 
 .container div {
@@ -44,4 +49,12 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+}
+
+.header, .footer {
+  grid-column: 1 / -1;
+}
+
+.sidebar{
+  grid-row: 2 / 4;
 }
